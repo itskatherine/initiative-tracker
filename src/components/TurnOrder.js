@@ -1,16 +1,14 @@
 import PlayerCard from "./PlayerCard";
 
 const TurnOrder = (props) => {
-  const { playerList } = props;
-  // const orderedPlayerList = playerList.sort((a, b) => {
-  //   return a.initiative - b.initiative;
-  // });
+  const { playerList, setPlayers } = props;
   const playerCards = playerList.map((player) => {
     return (
       <PlayerCard
         key={player.name} //change this
         name={player.name}
         initiative={player.initiative}
+        setPlayers={setPlayers}
       ></PlayerCard>
     );
   });

@@ -17,7 +17,7 @@ const InitArea = () => {
   return (
     <>
       <InitInput setPlayers={setPlayers}></InitInput>
-      <TurnOrder playerList={playerList}></TurnOrder>
+      <TurnOrder playerList={playerList} setPlayers={setPlayers}></TurnOrder>
       <OrderListButton setPlayers={setPlayers}></OrderListButton>
     </>
   );
