@@ -5,9 +5,10 @@ const TurnOrder = (props) => {
   const playerCards = playerList.map((player) => {
     return (
       <PlayerCard
-        key={player.name} //change this
+        key={player.index} //change this
         name={player.name}
         initiative={player.initiative}
+        bonus={player.bonus}
         setPlayers={setPlayers}
       ></PlayerCard>
     );

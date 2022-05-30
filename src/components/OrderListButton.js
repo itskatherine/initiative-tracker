@@ -4,7 +4,7 @@ const OrderListButton = (props) => {
   const orderPlayerList = () => {
     setPlayers((currentPlayers) => {
       const orderedPlayerList = currentPlayers.sort((a, b) => {
-        return a.initiative - b.initiative;
+        return a.initiative + a.bonus - (b.initiative + b.bonus);
       });
       return [...orderedPlayerList];
     });

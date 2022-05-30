@@ -4,11 +4,11 @@ import OrderListButton from "./OrderListButton";
 import { useState } from "react";
 
 let players = [
-  { name: "katherine", initiative: 10 },
-  { name: "tim", initiative: 8 },
-  { name: "zanna", initiative: 12 },
-  { name: "caz", initiative: 18 },
-  { name: "dad", initiative: 15 },
+  { name: "katherine", initiative: 10, bonus: -2 },
+  { name: "tim", initiative: 8, bonus: 2 },
+  { name: "zanna", initiative: 12, bonus: 3 },
+  { name: "caz", initiative: 18, bonus: 0 },
+  { name: "dad", initiative: 15, bonus: -1 },
 ];
 
 const InitArea = () => {
