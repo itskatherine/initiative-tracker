@@ -1,9 +1,12 @@
 import "./App.css";
+import Header from "./components/Header";
+import InitArea from "./components/InitArea";
 
 function App() {
   return (
     <div className="App">
-      <p>Initiative tracker</p>
+      <Header></Header>
+      <InitArea></InitArea>
     </div>
   );
 }
