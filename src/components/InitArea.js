@@ -1,5 +1,6 @@
 import InitInput from "./InitInput";
 import TurnOrder from "./TurnOrder";
+import OrderListButton from "./OrderListButton";
 import { useState } from "react";
 
 let players = [
@@ -11,12 +12,13 @@ let players = [
 ];
 
 const InitArea = () => {
-  const [playerlist, setPlayers] = useState(players);
+  const [playerList, setPlayers] = useState(players);
 
   return (
     <>
       <InitInput setPlayers={setPlayers}></InitInput>
-      <TurnOrder playerList={playerlist}></TurnOrder>
+      <TurnOrder playerList={playerList}></TurnOrder>
+      <OrderListButton setPlayers={setPlayers}></OrderListButton>
     </>
   );
 };
