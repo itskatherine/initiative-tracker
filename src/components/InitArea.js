@@ -1,6 +1,7 @@
 import InitInput from "./InitInput";
 import TurnOrder from "./TurnOrder";
 import OrderListButton from "./OrderListButton";
+import ProgressCombat from "./ProgressCombat";
 import { useState } from "react";
 
 let players = [
@@ -19,6 +20,7 @@ const InitArea = () => {
       <InitInput setPlayers={setPlayers}></InitInput>
       <TurnOrder playerList={playerList} setPlayers={setPlayers}></TurnOrder>
       <OrderListButton setPlayers={setPlayers}></OrderListButton>
+      <ProgressCombat setPlayers={setPlayers}></ProgressCombat>
     </>
   );
 };

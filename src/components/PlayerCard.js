@@ -1,5 +1,6 @@
 const PlayerCard = (props) => {
   const { name, initiative, bonus, setPlayers } = props;
+
   const deletePlayer = () => {
     setPlayers((currentPlayers) => {
       const playerRemoved = currentPlayers.filter((player) => {
@@ -9,12 +10,15 @@ const PlayerCard = (props) => {
     });
   };
   return (
-    <p>
+    <p className="player-card">
       <strong>
-        {initiative} + {bonus}
+        <span className="total">{initiative + bonus}</span> = ({initiative} +{" "}
+        {bonus})
       </strong>
       {" " + name + " "}
-      <button onClick={deletePlayer}>Delete</button>
+      <button onClick={deletePlayer} className="delete">
+        Delete
+      </button>
     </p>
   );
 };

@@ -2,10 +2,11 @@ import PlayerCard from "./PlayerCard";
 
 const TurnOrder = (props) => {
   const { playerList, setPlayers } = props;
-  const playerCards = playerList.map((player) => {
+  const playerCards = playerList.map((player, index) => {
+    console.log(index);
     return (
       <PlayerCard
-        key={player.index} //change this
+        key={index} //change this
         name={player.name}
         initiative={player.initiative}
         bonus={player.bonus}
