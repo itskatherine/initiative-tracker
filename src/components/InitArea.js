@@ -16,12 +16,12 @@ const InitArea = () => {
   const [playerList, setPlayers] = useState(players);
 
   return (
-    <>
+    <div className="init-area">
       <InitInput setPlayers={setPlayers}></InitInput>
       <TurnOrder playerList={playerList} setPlayers={setPlayers}></TurnOrder>
       <OrderListButton setPlayers={setPlayers}></OrderListButton>
       <ProgressCombat setPlayers={setPlayers}></ProgressCombat>
-    </>
+    </div>
   );
 };
 

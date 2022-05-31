@@ -1,5 +1,5 @@
 const PlayerCard = (props) => {
-  const { name, initiative, bonus, setPlayers } = props;
+  const { name, initiative, bonus, setPlayers, className } = props;
 
   const deletePlayer = () => {
     setPlayers((currentPlayers) => {
@@ -10,10 +10,10 @@ const PlayerCard = (props) => {
     });
   };
   return (
-    <p className="player-card">
+    <p className={"player-card " + className}>
       <strong>
-        <span className="total">{initiative + bonus}</span> = ({initiative} +{" "}
-        {bonus})
+        <span className="total">{parseInt(initiative) + parseInt(bonus)}</span>{" "}
+        = ({initiative} + {bonus})
       </strong>
       {" " + name + " "}
       <button onClick={deletePlayer} className="delete">

@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .App {
   text-align: center;
+}
+
+#roll{
+  margin: 15px;
+  padding: 5px;
+}
+
+#dice{
+  width:50%;
+}
+
+.current-player{
+  background-color: rgb(216, 141, 141);
+}
+
+.init-area{
+  margin:auto;
+  width:50%
+}
+
+h1{
+  
+color: rgb(101, 41, 41);
+ font-family: "Poppins";
+}
+
+p,button,label,h1{
+  font-family: "Poppins";
+  margin:10px
 }
 

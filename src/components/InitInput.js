@@ -29,8 +29,17 @@ const InitInput = (props) => {
         name="roll"
         value={newPlayer}
       ></input>
-      <button type="submit">Roll D20!</button>
-      <label>Bonus</label>
+      <p></p>
+      <div>
+        <button id="roll" type="submit">
+          <img
+            id="dice"
+            src="https://static.thenounproject.com/png/362284-200.png"
+          ></img>
+          <p>ROLL</p>
+        </button>
+      </div>
+      <label> Bonus </label>
       <input
         type="number"
         onChange={(event) => {
